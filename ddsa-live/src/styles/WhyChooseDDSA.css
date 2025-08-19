@@ -1,0 +1,77 @@
+.why-choose-ddsa {
+  background-color: rgba(217, 4, 41, 0.03);
+  position: relative;
+  padding: 5rem 0;
+}
+
+.feature-row {
+  position: relative;
+}
+
+.feature-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d90429;
+}
+
+.text-content h3 {
+  font-size: 1.75rem;
+}
+
+.text-content p {
+  line-height: 1.8;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Timeline line */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: rgba(217, 4, 41, 0.1);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Pointers for each feature */
+.feature-row::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #d90429;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .feature-row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .feature-row::before {
+    left: 10%;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
+  .timeline-line {
+    left: 10%;
+    width: 4px;
+  }
+  .text-content h3 {
+    font-size: 1.5rem;
+  }
+  .feature-number {
+    font-size: 1.75rem;
+  }
+}

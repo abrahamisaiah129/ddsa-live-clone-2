@@ -1,0 +1,10 @@
+.footer-link {
+  cursor: pointer;
+  color: #aaa;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: #fff;
+}

@@ -1,0 +1,59 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #4f46e5, #9333ea, #ec4899);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  z-index: 0;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.brand-text {
+  background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+/* Example hero.css */
+
+.gradient-text {
+  background: linear-gradient(90deg, #d90429, #ff4d6d);
+  -webkit-background-clip: text;
+  background-clip: text; /* <— this fixes warning */
+  -webkit-text-fill-color: transparent;
+}
+.bank-logo {
+  width: 120px;          /* fixed width */
+  height: 60px;          /* fixed height */
+  object-fit: contain;   /* maintain aspect ratio */
+  display: inline-block;
+}

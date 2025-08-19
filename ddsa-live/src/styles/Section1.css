@@ -1,0 +1,26 @@
+.section1 {
+  background-color: transparent; /* transparent background */
+  color: #212529;
+  position: relative;
+  z-index: 1;
+}
+
+.section1 .btn-danger {
+  background-color: #d90429;
+  border-color: #d90429;
+}
+
+.section1 .btn-danger:hover {
+  background-color: #b00320;
+  border-color: #b00320;
+}
+
+.section1 p {
+  line-height: 1.8; /* better readability */
+}
+
+.section1 .img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
